@@ -92,34 +92,28 @@ CF Helper demonstrates enterprise Cloudflare capabilities through a practical AI
 
 ## Key Features
 
-### 🤖 Multi-Model AI Support
+###  Multi-Model AI Support
 - Cloudflare Workers AI models
 - OpenAI GPT models (via AI Gateway)
 - Anthropic Claude models (via AI Gateway)
 - Dynamic model selection based on availability
 
-### 🔐 Enterprise Security
+###  Enterprise Security
 - Cloudflare Zero Trust Access protection
 - Platform-specific authentication
 - No data persistence (privacy-first)
 
-### 💬 Real-time Communication
+###  Real-time Communication
 - WebSocket connections via Durable Objects
 - Live streaming responses
 - Multi-client synchronization
 
-### 🌍 Global Performance
+###  Global Performance
 - Runs on Cloudflare's global edge network
 - Low latency responses worldwide
 - Automatic scaling
 
-## Getting Started
 
-1. **Deploy the Worker** - [CF Helper Worker Setup](documentation/cfhelperworker.md)
-2. **Choose Your Client**:
-   - **Web**: Access via browser at your Worker domain
-   - **Docker**: Run locally with `docker pull schenanigans/cfhelper`
-   - **Native**: Build from source for macOS/iOS
 
 ## Documentation
 
