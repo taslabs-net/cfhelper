@@ -61,8 +61,11 @@ CF Helper demonstrates enterprise Cloudflare capabilities through a practical AI
                      +------------------------+
                      |  Cloudflare Edge (CDN) |
                      |  +------------------+  |
-                     |  |  Zero Trust      |  |
-                     |  |  Access Gateway  |  |
+                     |  | Zero Trust Access|  | <-- Service Auth Tokens
+                     |  | (CF-Access-*)    |  |     (Client ID/Secret)
+                     |  +------------------+  |
+                     |  |    Turnstile     |  | <-- Bot Protection
+                     |  | (Web clients only)|  |     (Bypassed for native)
                      |  +------------------+  |
                      +-----------+------------+
                                  |
@@ -70,15 +73,15 @@ CF Helper demonstrates enterprise Cloudflare capabilities through a practical AI
                      |   CF Helper Worker     |
                      |  +------------------+  |
                      |  | Durable Objects  |  | <-- WebSocket Sessions
-                     |  | (Chat Sessions)  |  |
+                     |  | (Chat Sessions)  |  |     Real-time messaging
                      |  +------------------+  |
                      |  +------------------+  |
                      |  |   KV Storage     |  | <-- Model Configuration
-                     |  | (All Models JSON) |  |
+                     |  | (Models JSON)    |  |     Dynamic model list
                      |  +------------------+  |
                      |  +------------------+  |
                      |  |  Workers AI      |  | <-- Cloudflare Models
-                     |  |    Binding       |  |
+                     |  |    Binding       |  |     Native AI execution
                      |  +------------------+  |
                      +-----------+------------+
                                  |
@@ -92,32 +95,49 @@ CF Helper demonstrates enterprise Cloudflare capabilities through a practical AI
                      |  +------------------+  |
                      |  +------------------+  |
                      |  |      MCP          |  | <-- Documentation Search
+                     |  | (Model Context)  |  |     Cloudflare docs
                      |  +------------------+  |
                      +------------------------+
 ```
 
+### Cloudflare Products Used
+
+- **Workers** - Edge compute runtime for the backend
+- **Workers AI** - Native AI model execution
+- **AI Gateway** - Unified API for external AI providers
+- **Durable Objects** - Stateful WebSocket session management
+- **KV Storage** - Distributed key-value store for configuration
+- **Zero Trust Access** - Service authentication with tokens
+- **Turnstile** - Bot protection for web clients
+- **Transform Rules** - HTTP header manipulation for CSP removal
+- **MCP (Model Context Protocol)** - Enhanced documentation search
+- **mTLS** - Optional mutual TLS for enterprise Docker deployments
+
 ## Key Features
 
 ###  Multi-Model AI Support
-- Cloudflare Workers AI models
-- OpenAI GPT models (via AI Gateway)
-- Anthropic Claude models (via AI Gateway)
-- Dynamic model selection based on availability
+- **Cloudflare Workers AI** - Native models (Llama, Qwen, DeepSeek)
+- **OpenAI Integration** - GPT-4 and O4 models via AI Gateway
+- **Anthropic Integration** - Claude Opus 4 and Sonnet 4 via AI Gateway
+- **Dynamic Model Loading** - Models filtered by available API keys
 
 ###  Enterprise Security
-- Cloudflare Zero Trust Access protection
-- Platform-specific authentication
-- No data persistence (privacy-first)
+- **Zero Trust Access** - Service auth tokens (CF-Access-Client-Id/Secret)
+- **Turnstile Protection** - Bot prevention for web interface
+- **Platform Authentication** - Native apps bypass Turnstile
+- **No Data Persistence** - Privacy-first, no conversation storage
 
 ###  Real-time Communication
-- WebSocket connections via Durable Objects
-- Live streaming responses
-- Multi-client synchronization
+- **Durable Objects** - Stateful WebSocket session management
+- **Live Streaming** - See AI responses as they're generated
+- **PartyKit Protocol** - Efficient message routing
+- **Multi-client Support** - Synchronized across all platforms
 
 ###  Global Performance
-- Runs on Cloudflare's global edge network
-- Low latency responses worldwide
-- Automatic scaling
+- **Edge Computing** - Runs on 300+ Cloudflare locations
+- **Smart Routing** - Automatic latency optimization
+- **KV Storage** - Globally distributed configuration
+- **Auto-scaling** - Handles any traffic volume
 
 ## Getting Started
 
@@ -140,4 +160,4 @@ CF Helper demonstrates enterprise Cloudflare capabilities through a practical AI
 
 ---
 
-Tim
+Built with ❤️ using Cloudflare's global network
