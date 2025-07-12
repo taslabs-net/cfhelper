@@ -16,6 +16,7 @@ A multi-platform AI assistant that provides intelligent access to Cloudflare doc
 ## Screenshots
 
 ### iOS
+
 <p align="center">
   <img src="https://github.com/taslabs-net/cfhelper/blob/main/screenshots/cfhelper_iOS_main.png" width="300" alt="CF Helper iOS Main Screen">
   <img src="https://github.com/taslabs-net/cfhelper/blob/main/screenshots/cfhelper_iOS_model_selection.png" width="300" alt="CF Helper iOS Model Selection">
@@ -23,12 +24,14 @@ A multi-platform AI assistant that provides intelligent access to Cloudflare doc
 </p>
 
 ### macOS
+
 <p align="center">
   <img src="https://github.com/taslabs-net/cfhelper/blob/main/screenshots/cfhelper_macOS_main.png" width="600" alt="CF Helper macOS Main Screen">
   <img src="https://github.com/taslabs-net/cfhelper/blob/main/screenshots/cfhelper_macOS_response.png" width="600" alt="CF Helper macOS Response">
 </p>
 
 ### Web Interface / Docker
+
 <p align="center">
   <img src="https://github.com/taslabs-net/cfhelper/blob/main/screenshots/cfhelper_web_docker_main.png" width="600" alt="CF Helper Web/Docker Main Screen">
   <img src="https://github.com/taslabs-net/cfhelper/blob/main/screenshots/cfhelper_web_docker_response.png" width="600" alt="CF Helper Web/Docker Response">
