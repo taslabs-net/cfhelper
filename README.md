@@ -11,7 +11,7 @@
 
 # CF Helper - Cloudflare Documentation Assistant
 
-A multi-platform AI assistant that provides intelligent access to Cloudflare documentation. Built on Cloudflare's global network using Workers AI, Durable Objects, KV storage, and Zero Trust Access.
+A multi-platform AI assistant that provides intelligent access to Cloudflare documentation.
 
 ## Screenshots
 
