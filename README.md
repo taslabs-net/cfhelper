@@ -142,14 +142,6 @@ CF Helper demonstrates enterprise Cloudflare capabilities through a practical AI
 - **KV Storage** - Globally distributed configuration
 - **Auto-scaling** - Handles any traffic volume
 
-## Getting Started
-
-1. **Deploy the Worker** - [CF Helper Worker Setup](documentation/cfhelperworker.md)
-2. **Choose Your Client**:
-   - **Web**: Access via browser at your Worker domain
-   - **Docker**: Run locally with `docker pull schenanigans/cfhelper`
-   - **Native**: Build from source for macOS/iOS
-
 ## Documentation
 
 - **[Worker Setup & Configuration](cfhelperworker.md)** - Deploy the backend on Cloudflare
