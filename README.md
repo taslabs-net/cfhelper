@@ -28,6 +28,12 @@ A multi-platform AI assistant that provides intelligent access to Cloudflare doc
   <img src="https://github.com/taslabs-net/cfhelper/blob/main/screenshots/cfhelper_macOS_response.png" width="600" alt="CF Helper macOS Response">
 </p>
 
+### Web Interface / Docker
+<p align="center">
+  <img src="https://github.com/taslabs-net/cfhelper/blob/main/screenshots/cfhelper_web_docker_main.png" width="600" alt="CF Helper Web/Docker Main Screen">
+  <img src="https://github.com/taslabs-net/cfhelper/blob/main/screenshots/cfhelper_web_docker_response.png" width="600" alt="CF Helper Web/Docker Response">
+</p>
+
 ## Overview
 
 CF Helper demonstrates enterprise Cloudflare capabilities through a practical AI documentation assistant. Users can ask questions about Cloudflare products and receive intelligent responses powered by multiple AI models.
@@ -113,14 +119,19 @@ CF Helper demonstrates enterprise Cloudflare capabilities through a practical AI
 - Low latency responses worldwide
 - Automatic scaling
 
+## Getting Started
 
+1. **Deploy the Worker** - [CF Helper Worker Setup](documentation/cfhelperworker.md)
+2. **Choose Your Client**:
+   - **Web**: Access via browser at your Worker domain
+   - **Docker**: Run locally with `docker pull schenanigans/cfhelper`
+   - **Native**: Build from source for macOS/iOS
 
 ## Documentation
 
-- **[Worker Setup & Configuration](documentation/cfhelperworker.md)** - Backend deployment
-- **[Docker Client Guide](documentation/cfhelperdocker.md)** - Local web server setup
-- **[Native Apps Guide](documentation/cfhelpermac.md)** - macOS/iOS development
-- **[Architecture Details](documentation/cfhelperoverview.md)** - Technical deep dive
+- **[Worker Setup & Configuration](cfhelperworker.md)** - Deploy the backend on Cloudflare
+- **[Docker Client Guide](cfhelperdocker.md)** - Run a local web server with Docker
+- **[Native Apps Guide](cfhelpermac.md)** - Build native macOS/iOS/iPadOS apps
 
 ## Links
 
